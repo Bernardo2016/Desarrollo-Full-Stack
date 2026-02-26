@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --success: #10b981;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 480px;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.025em;
+    color: var(--primary-color);
+}
+
+/* Grupo de Entrada */
+.input-group {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    ring: 3px solid rgba(79, 70, 229, 0.1);
+}
+
+#agregar-tarea {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#agregar-tarea:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Lista de Tareas */
+ul {
+    list-style: none;
+}
+
+li {
+    background: #fff;
+    border: 1px solid #f1f5f9;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    border-color: #cbd5e1;
+    transform: scale(1.01);
+}
+
+span {
+    font-weight: 500;
+    color: var(--text-main);
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+/* Botones de Acción */
+.acciones {
+    display: flex;
+    gap: 8px;
+}
+
+button.edit, button.delete {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button.edit {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+button.delete {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+button:hover {
+    filter: brightness(0.95);
+}
+
+/* Estilo Responsivo */
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}

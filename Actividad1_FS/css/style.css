@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- BOTÓN VERDE */
+.testbtn {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Para que llene el formulario */
+    margin-top: 10px;
+}
+
+/* --- BOTÓN Azul */
+.test2btn {
+    background-color: #2779d6;
+    color: white;
+    font-size: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    /* --- CORRECCIONES DE CENTRADO --- */
+    width: 150px; 
+    margin: 10px auto; 
+    display: block; 
+    text-align: center;
+    list-style-position: inside; 
+}
+.testbtn:hover {
+    background-color: #059862;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #eaf4fc; /* CAMBIO: Azul muy claro */
+    color: #222;
+    text-align: center; /* ESTO CENTRA TODO EL TEXTO GENERAL */
+}
+
+/* Encabezado */
+#encabezado {
+    background-color: #003366; /* CAMBIO: Azul oscuro */
+    color: #ffffff;
+    padding: 30px 20px;
+}
+
+#encabezado .descripcion {
+    margin: 10px 0;
+}
+
+.mision-vision p {
+    margin-top: 5px;
+}
+
+/* Sección proyectos */
+#proyectos {
+    padding: 40px 20px;
+}
+
+#proyectos h2 {
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* CENTRA LAS TARJETAS */
+    flex-wrap: wrap; /* Para que bajen en pantallas chicas */
+}
+
+.proyecto {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    /* fondo del proyecto */
+    border: 1px solid #ddd; 
+}
+
+.proyecto img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.proyecto h3 {
+    margin: 10px 0;
+    color: #003366;
+}
+
+/* Ver Más */
+summary {
+    cursor: pointer;
+    color: #003366;
+    margin-top: 10px;
+}
+
+/* Contacto */
+#contacto {
+    background-color: #cbe4ec;
+    padding: 40px 20px;
+    max-width: 600px; /* Limitá el ancho para que se vea bien centrado */
+    margin: 20px auto; /* Auto a los lados lo centra */
+    border-radius: 8px;
+}
+
+#contacto h2 {
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+form {
+    width: 100%;
+}
+
+.campo {
+    margin-bottom: 15px;
+    text-align: left; /* etiquetas a la izquierda */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+/* Pie de página */
+#pie {
+    background-color: #003366; /* Azul oscuro  */
+    color: #ffffff;
+    padding: 20px;
+}
+/* texto de redes */
+.redes a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Adapta al celular */
+@media (max-width: 768px) {
+    .contenedor-proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+}

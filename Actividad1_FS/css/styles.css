@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Gris clásico de fondo */
+    color: #333;
+}
+
+/* --- TU BOTÓN (VERDE) --- */
+.testbtn {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.testbtn:hover {
+    background-color: #059862;
+}
+
+/* Encabezado (AZUL) */
+#encabezado {
+    background-color: #003366; /* Azul Oscuro */
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 5px solid #04AA6D; /* Un detalle simple en verde abajo */
+}
+
+#encabezado .descripcion {
+    margin: 10px 0;
+}
+
+/* Proyectos */
+#proyectos {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que baje en pantallas pequeñas */
+    gap: 20px;
+}
+
+/* Tarjetas SIMPLIFICADAS */
+.proyecto {
+    background-color: #ffffff;
+    border: 1px solid #ccc; /* Borde gris simple en vez de sombra */
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.proyecto h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Estilo simple para el desplegable */
+summary {
+    cursor: pointer;
+    color: #003366;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 10px;
+    list-style: none; /* Quita el triángulo por defecto */
+}
+
+/* Formulario */
+#contacto {
+    background-color: #ffffff;
+    border: 1px solid #ccc; /* Borde simple */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#contacto h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+}
+
+/* Pie de página */
+#pie {
+    background-color: #333; /* Gris oscuro estándar */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.redes a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsivo (Celulares) */
+@media (max-width: 768px) {
+    .contenedor-proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+}

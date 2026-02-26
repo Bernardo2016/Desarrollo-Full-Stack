@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="encabezado">
+        <h1>TechNova</h1>
+        <hr>
+        <p class="descripcion">
+            Somos una empresa dedicada al desarrollo de soluciones tecnológicas innovadoras.
+        </p>
+        <div class="mision-vision">
+            <p><strong>Misión:</strong> Brindar soluciones digitales de alta calidad.</p>
+            <p><strong>Visión:</strong> Ser líderes en innovación tecnológica a nivel nacional.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+
+            <div class="lista-proyectos">
+                
+                <article class="proyecto-item">
+                    <img src="images/imagen1.jpg" alt="Logo de la empresa TechNova" width="350">
+                    <h3>Página Web Corporativa</h3>
+                    <p>Desarrollo de una página web moderna y accesible.</p>
+                    <details>
+                        <summary class="test2btn">Ver más</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </details>
+                </article>
+
+                <hr class="separador">
+                <br>
+
+                <article class="proyecto-item">
+                    <img src="images/imagen2.jpg" alt="Imagen del sistema de gestión" width="350">
+                    <h3>Sistema de Gestión</h3>
+                    <p>Plataforma para administrar clientes y ventas.</p>
+                    <details>
+                        <summary class="test2btn">Ver más</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </details>
+                </article>
+
+                <hr class="separador">
+                <br>
+                <article class="proyecto-item">
+                    <img src="images/imagen3.jpg" alt="Imagen de la aplicación móvil" width="350">
+                    <h3>Aplicación Móvil</h3>
+                    <p>App enfocada en mejorar la productividad.</p>
+                    <details>
+                        <summary class="test2btn">Ver más</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </details>
+                </article>
+
+            </div>
+        </section>
+            
+
+            <button id="botonColor">*Cambiar Color*</button>
+            <script>
+                    // PASO A: Seleccionar los elementos del DOM (Document Object Model)
+                    const miBoton = document.getElementById('botonColor');
+
+                    // PASO B: Definir la función (lo que pasará)
+                    function cambiarColor() {
+                    //lógica simple: si es gris, hazlo azul; si no, hazlo gris.
+                        if (miBoton.style.backgroundColor === 'lightgray' || miBoton.style.backgroundColor === '') {
+                            miBoton.style.backgroundColor = '#aad274'; // verde claro
+                        } else {
+                            miBoton.style.backgroundColor = 'lightgray'; // Regresa al original
+                        }
+                    }
+                    // PASO C: Asociar la función al evento (click)
+                     miBoton.addEventListener('click', cambiarColor);
+                </script>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 55-1234-5678">
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                
+                <button class="testbtn">Enviar mensaje</button>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer id="pie">
+        <div class="redes">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p>© 2026 TechNova.</p>
+    </footer>
+
+</body>
+</html>
